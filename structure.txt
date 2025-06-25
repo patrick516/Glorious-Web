@@ -1,0 +1,49 @@
+.
+├── client
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.js
+│   ├── public
+│   │   └── images
+│   ├── README.md
+│   ├── src
+│   │   ├── api
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── assets
+│   │   ├── components
+│   │   ├── constants
+│   │   ├── hooks
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   ├── pages
+│   │   ├── types
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.js
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── package.json
+├── package-lock.json
+├── prisma
+│   ├── migrations
+│   │   ├── 20250612085302_init
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── server
+│   ├── controllers
+│   │   └── serviceController.js
+│   ├── db
+│   ├── index.js
+│   ├── middlewares
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── routes
+│   │   └── serviceRoutes.js
+│   └── utils
+└── structure.txt
+
+21 directories, 26 files
