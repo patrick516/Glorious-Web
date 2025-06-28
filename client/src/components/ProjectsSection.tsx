@@ -35,6 +35,10 @@ function ProjectsSection() {
   return (
     <section className="py-20 px-4 bg-[#F5F5F5] text-center">
       <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#143C2F] mb-2">
+          Our Projects
+        </h2>
+        <div className="h-1 w-16 bg-[#143C2F] mx-auto mb-8 rounded"></div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {projects.map((project, i) => (
             <ProjectCard key={i} project={project} />

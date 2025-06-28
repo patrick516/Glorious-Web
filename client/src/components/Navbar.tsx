@@ -24,8 +24,6 @@ function Navbar() {
   ];
 
   const servicesLinks = [
-    { to: "/services/mission", label: "Mission" },
-    { to: "/services/impact", label: "Impact" },
     { to: "/services/method", label: "Method" },
     { to: "/services/programs", label: "Programs" },
     { to: "/services/programs/tree", label: "Tree Programs" },
@@ -92,7 +90,7 @@ function Navbar() {
   const handleMouseLeave = (setter: (open: boolean) => void) => {
     timeoutRef.current = setTimeout(() => {
       setter(false);
-    }, 150);
+    }, 50);
   };
 
   return (
@@ -151,16 +149,18 @@ function Navbar() {
                   : "opacity-0 invisible"
               }`}
             >
-              {servicesLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="block px-4 py-2 hover:bg-gray-100"
-                  onClick={() => setDesktopServicesOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {servicesLinks
+                .filter((link) => link.to !== "/services/impact")
+                .map(({ to, label }) => (
+                  <Link
+                    key={to}
+                    to={to}
+                    className="block px-4 py-2 hover:bg-gray-100"
+                    onClick={() => setDesktopServicesOpen(false)}
+                  >
+                    {label}
+                  </Link>
+                ))}
             </div>
           </div>
 
